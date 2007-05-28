@@ -1,5 +1,5 @@
 %define name pcsc-tools
-%define version 1.4.7
+%define version 1.4.8
 
 %define num_release 1
 %define release %mkrel %num_release
@@ -56,18 +56,3 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 %{_datadir}/pcsc/smartcard_list.txt
 
-
-%{!?_with_unstable:* %(LC_ALL=C date +"%a %b %d %Y") %{packager} %{version}-%{release}}
-%{!?_with_unstable: - rebuild of %{version}-%{rel}%{distsuffix} for %{distversion}}
-* Mon Mar 27 2006 Andreas Hasenack <andreas@mandriva.com> 1.4.4-2%{distsuffix}
-- small spec cleanups
-- don't use file lists
-
-* Mon Mar 27 2006 Olivier Lahaye <olivier.lahaye1@free.fr> 1.4.4-1%{distsuffix}
-- New version 1.4.4.
-
-* Wed Mar 22 2006 Olivier Lahaye <olivier.lahaye1@free.fr> 1.4.2-2%{distsuffix}
-- Updated Requires (from pcsc-perl to perl-pcsc-perl).
-
-* Wed Mar 08 2006 Olivier Lahaye <olivier.lahaye1@free.fr> 1.4.2-1%{distsuffix}
-- Initial packaging.
