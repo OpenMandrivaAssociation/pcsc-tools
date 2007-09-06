@@ -1,5 +1,5 @@
 %define name pcsc-tools
-%define version 1.4.9
+%define version 1.4.10
 
 %define num_release 1
 %define release %mkrel %num_release
@@ -7,7 +7,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2+
 Summary:	PCSC tools useful for a PC/SC user
 Group:		Text tools
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.gz
@@ -51,7 +51,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr (-,root,root)
-%doc LICENCE README TODO Changelog.bz2
+%doc README TODO Changelog.bz2
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/pcsc/smartcard_list.txt
