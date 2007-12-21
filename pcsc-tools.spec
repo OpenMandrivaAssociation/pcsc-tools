@@ -14,6 +14,7 @@ Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.gz.asc
 Requires:	perl-pcsc-perl >= 1.4.2
 Buildrequires:	pcsc-lite-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 URL:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 
 %description
