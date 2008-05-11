@@ -1,5 +1,5 @@
 %define name pcsc-tools
-%define version 1.4.10
+%define version 1.4.14
 
 %define num_release 1
 %define release %mkrel %num_release
