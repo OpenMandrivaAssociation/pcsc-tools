@@ -2,7 +2,7 @@
 %define version 1.4.15
 
 %define num_release 1
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -12,7 +12,7 @@ Summary:	PCSC tools useful for a PC/SC user
 Group:		Text tools
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.gz
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.gz.asc
-Requires:	perl-pcsc-perl >= 1.4.2
+Requires:	perl-pcsc-perl >= 1.4.2 ccid
 Buildrequires:	pcsc-lite-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 URL:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
