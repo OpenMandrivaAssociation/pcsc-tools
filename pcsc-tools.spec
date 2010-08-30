@@ -2,7 +2,7 @@
 %define version 1.4.15
 
 %define num_release 1
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:		%{name}
 Version:	%{version}
@@ -12,6 +12,7 @@ Summary:	PCSC tools useful for a PC/SC user
 Group:		Text tools
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.gz
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.gz.asc
+Patch0:		pcsc-tools-1.4.15-pcsclite-1.6.patch 
 Requires:	perl-pcsc-perl >= 1.4.2 ccid
 Buildrequires:	pcsc-lite-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
@@ -37,6 +38,7 @@ This package contains some tools useful for a PC/SC user.
 
 %prep
 %setup -q
+%patch0 -p0
 bzip2 -9 Changelog
 
 %build
