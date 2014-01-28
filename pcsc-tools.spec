@@ -2,8 +2,8 @@
 
 Summary:	PCSC tools useful for a PC/SC user
 Name:		pcsc-tools
-Version:	1.4.21
-Release:	5
+Version:	1.4.22
+Release:	1
 License:	GPLv2+
 Group:		Text tools
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/

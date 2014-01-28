@@ -1,2 +1,5 @@
+removed_sources:
+  pcsc-tools-1.4.21.tar.gz: c6bb26e5a925f2205555d2f5b8dbb914665d100c
 sources:
-  "pcsc-tools-1.4.21.tar.gz": c6bb26e5a925f2205555d2f5b8dbb914665d100c
+  pcsc-tools-1.4.22.tar.gz: e8db9caab3cc6b6170fd21aafcc4a115d5fde15f
+  pcsc-tools-1.4.22.tar.gz.asc: e3d7659290b96403c24b0f9b2c87891d1dd6898e
