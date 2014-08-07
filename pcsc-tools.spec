@@ -36,6 +36,7 @@ This package contains some tools useful for a PC/SC user.
 bzip2 -9 Changelog
 
 %build
+%setup_compile_flags
 %make
 
 %install
