@@ -41,7 +41,7 @@ This package contains some tools useful for a PC/SC user.
 %make DESTDIR=%{buildroot}/usr install
 
 %files
-%doc README TODO
+%doc README
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_datadir}/pcsc/smartcard_list.txt
