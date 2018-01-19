@@ -34,11 +34,11 @@ This package contains some tools useful for a PC/SC user.
 %setup -q
 
 %build
-%setup_compile_flags
+%configure
 %make
 
 %install
-%make DESTDIR=%{buildroot}/usr install
+%makeinstall_std
 
 %files
 %doc README
