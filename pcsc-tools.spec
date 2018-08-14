@@ -3,13 +3,13 @@
 Summary:	PCSC tools useful for a PC/SC user
 Name:		pcsc-tools
 Version:	1.5.2
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Text tools
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.bz2
 Buildrequires:	pkgconfig(libpcsclite)
-Requires:	pcsc-lite
+Requires:	pcsc-lite >= 1.8.23
 Requires:	perl-pcsc-perl >= 1.4.2
 
 %description
@@ -31,14 +31,14 @@ This package contains some tools useful for a PC/SC user.
     graphical interface.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README
