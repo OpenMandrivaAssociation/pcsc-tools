@@ -8,7 +8,7 @@ License:	GPLv2+
 Group:		Text tools
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.bz2
-Buildrequires:	pkgconfig(libpcsclite)
+BuildRequires:	pkgconfig(libpcsclite)
 Requires:	pcsc-lite >= 1.8.23
 Requires:	perl-pcsc-perl >= 1.4.2
 
