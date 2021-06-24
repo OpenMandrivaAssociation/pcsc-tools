@@ -1,13 +1,13 @@
-%define debug_package %{nil}
-
 Summary:	PCSC tools useful for a PC/SC user
 Name:		pcsc-tools
 Version:	1.5.7
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Text tools
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.bz2
+# (tpg) always update it
+Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/smartcard_list.txt
 BuildRequires:	pkgconfig(libpcsclite)
 Requires:	pcsc-lite >= 1.8.23
 Requires:	perl-pcsc-perl >= 1.4.2
@@ -32,6 +32,7 @@ This package contains some tools useful for a PC/SC user.
 
 %prep
 %autosetup -p1
+cp -a %{SOURCE1} smartcard_list.txt
 
 %build
 %configure
