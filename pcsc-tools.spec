@@ -10,7 +10,7 @@ Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/smartcard_list.txt
 BuildRequires:	pkgconfig(libpcsclite)
 Requires:	pcsc-lite >= 1.8.23
-Requires:   perl-Chipcard-PCSC
+Requires:       perl-Chipcard-PCSC
 
 # Requires:	perl-pcsc-perl >= 1.4.2
 
