@@ -1,7 +1,7 @@
 Summary:	PCSC tools useful for a PC/SC user
 Name:		pcsc-tools
 Version:	1.6.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Text tools
 Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
@@ -10,7 +10,8 @@ Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/smartcard_list.txt
 BuildRequires:	pkgconfig(libpcsclite)
 Requires:	pcsc-lite >= 1.8.23
-Requires:	perl-pcsc-perl >= 1.4.2
+Requires: perl-Chipcard-PCSC
+# Requires:	perl-pcsc-perl >= 1.4.2
 
 %description
 This package contains some tools useful for a PC/SC user.
