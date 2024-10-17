@@ -4,7 +4,7 @@ Version:	1.6.0
 Release:	3
 License:	GPLv2+
 Group:		Text tools
-Url:		http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
+Url:		https://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.bz2
 # (tpg) always update it
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/smartcard_list.txt
