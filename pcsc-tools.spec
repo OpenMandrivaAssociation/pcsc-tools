@@ -8,6 +8,11 @@ Url:		https://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 Source0:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/%{name}-%{version}.tar.bz2
 # (tpg) always update it
 Source1:	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/smartcard_list.txt
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libpcsclite)
 Requires:	pcsc-lite >= 1.8.23
 Requires:       perl-Chipcard-PCSC
